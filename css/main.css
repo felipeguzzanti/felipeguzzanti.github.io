@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* le damos estilos al elemento unidad dentro de las cards */
+.card {
+  outline: none;
+  /*Es cuando paso el tabulador por arriba se selecciona no es un borde es la prop putline*/
+  /* border: 2px solid rebeccapurple; */
+  /* color:#fcfdfe */
+  /* width: 220px; */
+  flex-grow: 1;
+  /* las tarjetas pueden crecer ajustandose al contenedor */
+  max-width: 300px;
+  height: 400px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 5px 5px 0 0;
+  background-color: lightsalmon;
+  overflow: hidden;
+  /* transition: background-color 1s ,transform 2s; */
+  transition: all 0.2s;
+}
+
+.card:hover,
+.card:focus {
+  background-color: yellow;
+  -moz-transform: scale(1.03);
+  -webkit-animation-play-statesform: scale(1.03);
+  transform: scale(1.03);
+  transform-origin: bottom;
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.01);
+}
+
+/* contenedor de la Imagen */
+.card__image-container {
+  background-color: lightpink;
+  height: 200px;
+  /* margin: 1em; */
+  /* overflow: hidden; con el polygon no hace falta el overflow*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+  clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .cards {
+    min-width: 400px;
+    max-width: 500px;
+    height: 200px;
+  }
+
+  .card__article {
+    display: flex;
+  }
+
+  .card .card__image-container,
+.card .card__image-container {
+    width: 40%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  }
+
+  .card:hover .card__image-container,
+.card:focus .card__image-container {
+    width: 40%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  }
+}
+/***********************************
+                HEADER
+************************************/
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+}
+
+#menu {
+  display: none;
+}
+
+/* el elemento de checkbok */
+/* checked : pseudoclase permite darle estilos cuando esta chequeado */
+#menu:checked + .nav-bar {
+  display: block;
+}
+
+#menu:checked ~ .search-bar .menu-toggle__label {
+  background-color: yellow;
+}
+
+/***********************************
+                NAV-BAR
+************************************/
+.nav-bar {
+  background-color: #5555;
+}
+
+/* ul dentro de la barra de navegacion */
+.nav-bar__nav-list {
+  background-color: #234;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+/* Elemento li item de lista */
+.nav-bar__nav-item {
+  text-align: center;
+  background-color: salmon;
+}
+
+.nav-bar__nav-link {
+  display: block;
+  background-color: springgreen;
+  counter-reset: red;
+  text-decoration: none;
+  padding: 1em;
+}
+
+/***********************************
+               SEARCH-BAR
+************************************/
+.search-bar {
+  display: flex;
+  background-color: skyblue;
+  justify-content: space-between;
+}
+
+/* Contenedor del Logo 
+            y
+ Contenedor del Formulario */
+.search-bar__logo-container,
+.search-bar__form-container {
+  padding: 1em;
+}
+
+.search-bar__logo-container {
+  background-color: #704c4c;
+}
+
+.search-bar__form-container {
+  background-color: #704cfc;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar__form-label {
+  background-color: tan;
+  margin: 0.3em;
+}
+
+/* Cajita de Busqueda */
+.search-bar__form-search {
+  background-color: #cdcd;
+  width: 70%;
+  border-radius: 0.3em;
+}
+
+/* boton de la barra search */
+.search-bar__form-submit {
+  background-color: #f2f3;
+}
+
+/* EL carrito va despues del la etiqueta del formulario 
+
+le pones flex-grow para que no se achique ni se agrande
+
+sera li mismo poner flex y grow,shirnk,
+
+*/
+.search-bar__carrito-container {
+  flex: 0 0 3em;
+  background-color: slategray;
+}
+
+/******************************************
+                    TOGGLE
+******************************************/
+.menu-toggle {
+  display: none;
+  /*en resolucion grande que no apraezca*/
+  background-color: tomato;
+  flex: 0 0 3em;
+  cursor: pointer;
+  position: relative;
+  /*Lo porque le puse absolute a los elemento del toglle para que no varien */
+}
+
+.menu-toggle__label {
+  display: block;
+  /* width: 100%;  */
+  height: 100%;
+  background-color: black;
+}
+
+.menu-toggle__top-bread,
+.menu-toggle__meat,
+.menu-toggle__bottom-bread {
+  display: block;
+  /*Lo transforo a elemento en bloque xq es de linea*/
+  background-color: #333;
+  height: 0.3em;
+  position: absolute;
+  /*Se empieza a mover a partir de su contenedor menu-toggle*/
+  left: 0.5em;
+  right: 0.5em;
+}
+
+/* los estoy posicionando segun el contenedor para que tengan un ancho y un alto cada uno */
+.menu-toggle__top-bread {
+  top: 0.8em;
+}
+
+.menu-toggle__meat {
+  top: 50%;
+  margin-top: -0.1em;
+}
+
+.menu-toggle__bottom-bread {
+  bottom: 0.8em;
+}
+
+/* Ajuste a la barra de navegacion cuando achico */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column-reverse;
+  }
+
+  /* Queremos que no aparezca hasta que le de clic en esta resolucion mas baja */
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar__nav-list {
+    flex-direction: column;
+  }
+}
+.section-cards {
+  padding: 1em;
+  background-color: #fff2f1;
+}
+
+/* contenedor de las cards les doy el display flex */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .cards-container {
+    gap: 2em;
+  }
+}/*# sourceMappingURL=main.css.map */

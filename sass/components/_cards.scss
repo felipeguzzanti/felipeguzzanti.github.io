@@ -1,0 +1,74 @@
+
+
+/* le damos estilos al elemento unidad dentro de las cards */
+
+.card{
+
+    outline: none;/*Es cuando paso el tabulador por arriba se selecciona no es un borde es la prop putline*/
+    /* border: 2px solid rebeccapurple; */
+    /* color:#fcfdfe */
+    /* width: 220px; */
+    flex-grow: 1;    /* las tarjetas pueden crecer ajustandose al contenedor */
+    max-width: 300px;
+    height: 400px;
+    box-shadow: 0 1px 5px rgba(0,0,0, .2),0 0px 3px rgba(0,0,0, .4);
+    border-radius: 5px 5px 0 0 ;
+    background-color: lightsalmon;
+    overflow: hidden;
+    /* transition: background-color 1s ,transform 2s; */
+    transition: all .2s;
+
+    &:hover,
+    &:focus{
+    
+        background-color: yellow;
+        -moz-transform: scale(1.03);
+        -webkit-animation-play-statesform: scale(1.03);
+         transform: scale(1.03);
+         transform-origin: bottom ;
+         box-shadow: 0 7px 8px rgba(0,0,0, .2),0 3px 3px rgba(0,0,0, .01);
+    }
+    
+    /* contenedor de la Imagen */
+    
+    &__image-container{
+    
+        background-color: lightpink;
+        height: 200px;
+        /* margin: 1em; */
+        /* overflow: hidden; con el polygon no hace falta el overflow*/
+        -webkit-clip-path:polygon(0 0, 100% 0,100% 200px, 0 180px);
+        clip-path: polygon(0 0, 100% 0,100% 200px, 0 180px);
+       
+    
+    }
+    
+    
+    
+    
+    @media (min-width:426px) and(max-width:768px) {
+    
+        &{
+            min-width: 400px;
+            max-width: 500px;
+            height: 200px;
+        }
+        &__article{
+            display: flex;
+        }
+        & &__image-container,
+        & &__image-container{
+            width: 40%;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+    
+        &:hover &__image-container,
+        &:focus &__image-container{
+            width: 40%;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+    }
+
+
+}
+

@@ -1,0 +1,253 @@
+
+
+
+/***********************************
+                HEADER
+************************************/
+
+.main-header{
+
+    display: flex;
+    flex-direction: column;
+ 
+    @media (max-width: 768px){
+
+        &-header{
+           
+            flex-direction: column-reverse;
+           
+        }   background-color: #ccc;
+}
+
+#menu{
+
+    display: none;
+
+
+}
+
+/* el elemento de checkbok */
+/* checked : pseudoclase permite darle estilos cuando esta chequeado */
+
+
+#menu:checked + .nav-bar { 
+
+    display: block; 
+
+}
+#menu:checked ~ .search-bar .menu-toggle__label {
+    
+ background-color: yellow;
+
+}  
+
+
+
+
+
+/***********************************
+                NAV-BAR
+************************************/
+
+.nav-bar{
+
+    background-color: #5555;
+    
+    /* ul dentro de la barra de navegacion */
+    
+    @media (max-width: 768px){
+        .nav-bar{
+
+            display: none;
+        }
+        .nav-bar__nav-list{
+    
+            flex-direction: column;
+            
+        }
+        
+        
+    }
+    &__nav-list{
+    
+        background-color: #234;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        
+    }
+    
+    /* Elemento li item de lista */
+    
+    &__nav-item{
+    
+        text-align: center;
+         
+        background-color: salmon;
+    }
+    
+    &__nav-link{
+    
+        display: block;
+        background-color: springgreen;
+        counter-reset: red;
+        text-decoration: none;
+        padding: 1em;
+    }
+
+
+}    
+
+
+/***********************************
+               SEARCH-BAR
+************************************/
+
+.search-bar{
+
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-between;
+
+    /* Contenedor del Logo 
+                y
+     Contenedor del Formulario */
+    
+     &__logo-container,
+     &__form-container{
+    
+        padding: 1em;
+    
+    
+    }
+    
+    
+    &__logo-container{
+    
+        background-color: #704c4c;
+    }
+    
+    
+    &__form-container{
+    
+        background-color: #704cfc;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+      
+    }
+    
+    &__form-label{
+    
+        background-color: tan;
+        margin: .3em;
+    }
+    
+    /* Cajita de Busqueda */
+    
+    &__form-search{
+    
+        background-color: #cdcd;
+        width: 70%;
+        border-radius: .3em;
+    
+    }
+    
+    /* boton de la barra search */
+    
+    &__form-submit{
+    
+        background-color: #f2f3;
+    }
+    
+    /* EL carrito va despues del la etiqueta del formulario 
+    
+    le pones flex-grow para que no se achique ni se agrande
+    
+    sera li mismo poner flex y grow,shirnk,
+    
+    */
+    
+    &__carrito-container{
+    
+        flex: 0 0 3em;
+        background-color:slategray;
+    
+    }
+
+}    
+
+
+
+/******************************************
+                    TOGGLE
+******************************************/
+
+.menu-toggle{
+
+    display: none; /*en resolucion grande que no apraezca*/
+    background-color:tomato;
+    flex: 0 0 3em;
+    cursor: pointer;
+    position: relative; /*Lo porque le puse absolute a los elemento del toglle para que no varien */
+
+
+    @media (max-width: 768px){
+
+       &{
+
+            display: block;
+        }
+
+    }
+
+    &__label{
+        display: block;
+        /* width: 100%;  */
+        height: 100%;
+        background-color: black;
+    }
+    &__top-bread,
+    &__meat,
+    &__bottom-bread{
+        display: block;  /*Lo transforo a elemento en bloque xq es de linea*/
+        background-color: #333;
+        height: .3em;
+        position: absolute;  /*Se empieza a mover a partir de su contenedor menu-toggle*/
+        left: .5em;
+        right: .5em;
+    
+    }
+    
+    
+    /* los estoy posicionando segun el contenedor para que tengan un ancho y un alto cada uno */
+    
+    &__top-bread{
+    
+        top: .8em;
+    }
+    
+    
+    &__meat{
+    
+        top: 50%;
+        margin-top: -.1em;
+    }
+    
+    &__bottom-bread{
+    
+        bottom: .8em;
+    }
+}
+
+
+
+
+
+/* Ajuste a la barra de navegacion cuando achico */
+
+    
+    /* Queremos que no aparezca hasta que le de clic en esta resolucion mas baja */
+    
+} 
+  
