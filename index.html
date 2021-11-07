@@ -9,9 +9,10 @@
    
 </head>
 <body>
+    
     <header class="main-header">
         <!-- Agregamos un input para establecer el efecto de aparecer y desaparecer la barra de nav-var cuando lo achicamos -->
-        
+       
         <input  type="checkbox"  id="menu" >
         
         <nav class="nav-bar">
@@ -30,34 +31,265 @@
                 </li>
             </ul>
         </nav>
+
         <div class="search-bar">
-            <div class="search-bar__logo-container">
-                Logo
-            </div>
+
+            <div class="search-bar__logo-container"></div>
             <form class="search-bar__form-container">
-                <label class="search-bar__form-label" for="busqueda">Buscar</label>
-                <input class="search-bar__form-search" id="busqueda" type="search">
-                <input class="search-bar__form-submit" type="submit" value="Buscar">
+                    <label class="search-bar__form-label" for="busqueda"></label>
+                    <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar Aquí...">
+                    <input class="search-bar__form-submit" type="submit" value="Buscar">
             </form>
-            <div class="search-bar__carrito-container">
-                C
+            <div class="search-bar__carrito-container ">
+        
             </div>
             <div class="menu-toggle">
-                <label class="menu-toggle__label " for="menu"> <!--colocar un for menu para que funcione el boton -->
-                    <span class="menu-toggle__top-bread"></span>
-                    <span class="menu-toggle__meat"></span>
-                    <span class="menu-toggle__bottom-bread"></span>
-                </label>
+                    <label class="menu-toggle__label " for="menu"> <!--colocar un for menu para que funcione el boton -->
+                        <span class="menu-toggle__top-bread"></span>
+                        <span class="menu-toggle__meat"></span>
+                        <span class="menu-toggle__bottom-bread"></span>
+                    </label>
             </div>
         </div>
+        
+    
+    
     </header>
-    <main>
-        <section class="section-cards">
-            <header class="section-cards__header">
 
-                <h1>Algo de contenido</h1>
-                <p>Se encontraron X productos</p>
-            </header>
+    <main>
+        <div class="section-cards__header">
+            
+            <h2 >Las mejores marcas las encontras en ECOMMERCE - CONNECTICUS</h2>   
+            <div class="content__image">
+                
+                <div class="content__image--message">
+                    
+                    <p> <span>Mendoza </span>, Godoy Cruz</p>
+                    
+                    <a class="boton" href="contacto.html">Contactar</a>
+                </div>
+            </div>
+         </div>
+        <section class="section-cards">
+
+            <h1>Computación</h1>
+
+            <div class="cards-container">
+
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container ">
+                            <img  class="card__image--notebook" src="/img/productos/notebook2.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Xiaomi Mi NoteBook 14</h2>
+                            <div class="card__description">
+                                <p>Ligero portátil con cuerpo de aluminio y procesador Intel.</p>
+                                <p><span>$344.999</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+
+                <a href="#" class="card">
+ 
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img class="card__image--pc" src="/img/productos/pc1.jpg" alt="">
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">PC Cross B02 i1 Windows11</h2>
+                            <div class="card__description">
+                                <p> Monitor de 22" Full HD, teclado, mouse y parlantes.</p>
+                                <p ><span >$211.299</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img  class="card__image--print" src="/img/productos/impresora1.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Impresora  EcoTank L5190</h2>
+                            <div class="card__description">
+                                <p>Sistema de tanque de tinta de super alta capacidad y economía</p>
+                                <p><span>$134.299</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+
+                <a href="#" class="card">
+                           
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img  class="card__image--chair" src="/img/productos/silla1.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Sillas Gaming de 2021</h2>
+                            <div class="card__description">
+                                <p>Está hecha de aluminio y cuero y su esponja para el respaldo y el reposacabezas.</p>
+                                <p><span>$94.299</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img class="card__image--ups" src="/img/productos/ups1.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading"> UPS Back  BX700UI</h2>
+                            <div class="card__description">
+                                <p>
+                                    Regulación automática de tensión (AVR).
+                                </p>
+                                <p><span>$87.584</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+            </div>
+            
+            <h1>Consolas y Videojuegos</h1>
+            <div class="cards-container">
+
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img  class="card__image--console" src="/img/productos/ps5.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Consolas</h2>
+                            <div class="card__description">
+                                <p>PlayStation®5 | Play Has No Limits.</p>
+                                <p><span>$204.999</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img class="card__image--volant" src="/img/productos/volante1.jpg" alt="volante">
+
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Accesorios</h2>
+                            <div class="card__description">
+                                <p>Volante Logitech G29 Force Feedback Pedalera Ps5 Ps4 Ps3 Pc.</p>
+                                <p><span>$124.199</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img  class="card__image--tv" src="/img/productos/tv01.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Monitores</h2>
+                            <div class="card__description">
+                                <p>Monitor gamer AOpen MH1 25MH1Q P led 25 " negro 100V/240V.</p>
+                                <p><span>$84.999</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img  class="card__image--auricular" src="/img/productos/auriculares01.jpg" alt="">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Auricular-Gamer</h2>
+                            <div class="card__description">
+                                <p>Auricular Gamer Con Microfono G9000 Sonido 7.1 Hd.</p>
+                                <p><span>$44.299</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+                <a href="#" class="card">
+
+                            
+                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
+
+                        <div class="card__image-container">
+                            <img class="card__image--consoleport" src="/img/productos/consolavid02.jpg" alt="Consola Portátil">
+                        </div>
+
+                        <div class="card__content">
+
+                            <h2 class="card__heading">Consola Portátil</h2>
+                            <div class="card__description">
+                                <p>Consola Portátil Pocky 32 Bit Juegos Micro Sd Noga Net.</p>
+                                <p><span>$32.299</span</p>
+                            </div>
+                        </div>
+
+                    </article>
+                </a>
+            </div>
+
+            <h1>Electrónica, Audio y Video</h1>
 
             <div class="cards-container">
 
@@ -67,14 +299,15 @@
                     <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
 
                         <div class="card__image-container">
-                            <img  class="card__image" src="" alt="">
+                            <img  class="card__image--cel" src="/img/productos/motog4.jpg" alt="celular">
                         </div>
 
                         <div class="card__content">
 
-                            <h2 class="card__heading">TV</h2>
+                            <h2 class="card__heading">Celulares</h2>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur liouo.</p>
+                                <p>Moto G20 64 GB azul cielo 4 GB RAM.</p>
+                                <p><span>$104.299</span</p>
                             </div>
                         </div>
 
@@ -83,38 +316,20 @@
 
                 <a href="#" class="card">
 
-                            
+                        
                     <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
 
                         <div class="card__image-container">
-                            <img class="card__image" src="" alt="">
+                            <img class="card__image--transf" src="/img/productos/transfor01.jpg" alt="controlador y transformador">
 
                         </div>
 
                         <div class="card__content">
 
-                            <h2 class="card__heading">TV</h2>
+                            <h2 class="card__heading"> Transformador</h2>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur liouo.</p>
-                            </div>
-                        </div>
-
-                    </article>
-                </a>
-                <a href="#" class="card">
-
-                            
-                    <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
-
-                        <div class="card__image-container">
-                            <img  class="card__image" src="" alt="">
-                        </div>
-
-                        <div class="card__content">
-
-                            <h2 class="card__heading">TV</h2>
-                            <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur liouo.</p>
+                                <p> TRANSFORMADOR CON MANDO, TIRA LED RGB 12V.</p>
+                                <p><span>$12.299</span</p>
                             </div>
                         </div>
 
@@ -126,14 +341,15 @@
                     <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
 
                         <div class="card__image-container">
-                            <img  class="card__image" src="" alt="">
+                            <img  class="card__image--drone" src="/img/productos/drone01.jpg" alt="drone">
                         </div>
 
                         <div class="card__content">
 
-                            <h2 class="card__heading">TV</h2>
+                            <h2 class="card__heading">Mini drone DJI Mavic Mini 2 </h2>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur liouo.</p>
+                                <p> Combo con cámara 4K light gray 3 baterías.</p>
+                                <p><span class="boton__comp">$24.299</span</p>
                             </div>
                         </div>
 
@@ -145,14 +361,15 @@
                     <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
 
                         <div class="card__image-container">
-                            <img class="card__image" src="" alt="">
+                            <img  class="card__image--parlante" src="/img/productos/parlanteportatil01.jpg" alt="parlante">
                         </div>
 
                         <div class="card__content">
 
-                            <h2 class="card__heading">TV</h2>
+                            <h2 class="card__heading">Parlante Portatil</h2>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur liouo.</p>
+                                <p>PARLANTE PORTATIL TANX50/77 PHILIPS.</p>
+                                <p><span>$8.299</span</p>
                             </div>
                         </div>
 
@@ -164,27 +381,27 @@
                     <article class="card__article"> <!--el elemento article nos pide que tengamos un encabezado ej h2 -->
 
                         <div class="card__image-container">
-                            <img  class="card__image" src="" alt="">
+                            <img class="card__image--home-theater" src="/img/productos/hometheater02.jpg" alt="home theater">
                         </div>
 
                         <div class="card__content">
 
-                            <h2 class="card__heading">TV</h2>
+                            <h2 class="card__heading">Home theater</h2>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur liouo.</p>
+                                <p>Onkyo 5.2 -Channel Wireless Bluetooth 4K 3D A/V >.</p>
+                                <p><span>$4.299</span</p>
                             </div>
                         </div>
 
                     </article>
                 </a>
-
-
             </div>
-
-
 
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <p>&copy; Desarrollado por Felipe Guzzanti</p>
+        <p>Para mayor informacion comunicarse al mail del desarrollador prof.guzzanti@outlook.com</p>
+    </footer>
 </body>
 </html>

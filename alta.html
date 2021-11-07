@@ -5,9 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/alta.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+   
 </head>
 <body>
-    <h1>Alta</h1>
+    
+    <header class="main-header">
+        <!-- Agregamos un input para establecer el efecto de aparecer y desaparecer la barra de nav-var cuando lo achicamos -->
+       
+        <input  type="checkbox"  id="menu" >
+        
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+
+            <div class="search-bar__logo-container"></div>
+            <form class="search-bar__form-container">
+                    <label class="search-bar__form-label" for="busqueda"></label>
+                    <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar Aquí...">
+                    <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <div class="search-bar__carrito-container ">
+        
+            </div>
+            <div class="menu-toggle">
+                    <label class="menu-toggle__label " for="menu"> <!--colocar un for menu para que funcione el boton -->
+                        <span class="menu-toggle__top-bread"></span>
+                        <span class="menu-toggle__meat"></span>
+                        <span class="menu-toggle__bottom-bread"></span>
+                    </label>
+            </div>
+        </div>
+        
+        
+    </header>
+    
+    <main class="main">
+        <div class="section-cards__header">
+            
+            <h2 >Las mejores marcas las encontras en ECOMMERCE - CONNECTICUS</h2>   
+            <div class="content__image">
+                
+                <div class="content__image--message">
+                    
+                    <p> <span>Mendoza </span>, Godoy Cruz</p>
+                    
+                    <a class="boton" href="contacto.html">Contactar</a>
+                </div>
+            </div>
+         </div>
+   
+        <div  class="content__form">
+
+            <form class="form">
+                
+    
+                <fieldset class="field-set fieldset__Uno">
+    
+                    <legend class="legend">
+    
+                        Alta de Productos
+
+                    </legend>
+    
+                    <div class="data">
+         
+                        <!-- Nombre -->
+    
+                        <div class="name">
+    
+                            <label for="nombre">Nombre del producto :</label>
+                        </div>
+                        <input type="text" name="nombre" id="nombre" class="input-complete" autofocus>
+    
+                        <!-- Categoria -->
+    
+    
+                        <div>
+    
+                            <label for="stock" class="stock">Categorias:</label>
+    
+                        </div>
+    
+                        <div>
+                            <select name="marcas" id="marcas" required class="selec">
+                                <!-- Creando el selector de opciones -->
+    
+                                <option value="25">-Seleccionar-Categoria-</option>
+                                <!-- Para poner dentro de option cual ejegir ,con un value vacio par que no envie nada en esa opcion-->
+    
+    
+                                <optgroup label="--Categoria---">
+    
+                                    <option value="14">Computación</option>
+                                    <!-- Opciones dentro del Selec con un value para cuando lo manda ,identificacion por nuero -->
+                                    <option value="16">Consolas y Videojuegos</option>
+                                    <option value="15">Electrónica,Audio y Videos</option>
+    
+    
+    
+                                </optgroup>
+                            </select>
+    
+                        </div>
+    
+    
+                        <!-- Marca del producto -->
+    
+                        <div>
+    
+                            <label for="stock" class="mark">Marcas:</label>
+    
+                        </div>
+    
+                        <div>
+                            <select name="marcas" id="marcas" required class="selec">
+                                <!-- Creando el selector de opciones -->
+    
+                                <option value="44">-Seleccionar-Marca-</option>
+                                <!-- Para poner dentro de option cual ejegir ,con un value vacio par que no envie nada en esa opcion-->
+    
+                                    <optgroup label="--Computación---">
+    
+                                    <option value="1">Notebook</option>
+                                    <!-- Opciones dentro del Selec con un value para cuando lo manda ,identificacion por nuero -->
+                                    <option value="2">PC</option>
+                                    <option value="3">Impresoras</option>
+                                    <option value="4">Sillas Gaming</option>
+                                    <option value="5">UPS</option>
+    
+                                </optgroup>
+                                <optgroup label="--Consolas y Vide Juegos---">
+    
+                                    <option value="47">Consolas</option>
+                                    <!-- Opciones dentro del Selec con un value para cuando lo manda ,identificacion por nuero -->
+                                    <option value="27">Accesorios</option>
+                                    <option value="34">Monitores</option>
+                                    <option value="41">Auriculares</option>
+                                    <option value="57">Consola Portatil</option>
+    
+                                </optgroup>
+                                <optgroup label="--Electrónica,Audio y video---">
+    
+                                    <option value="37">Celulares</option>
+                                    <!-- Opciones dentro del Selec con un value para cuando lo manda ,identificacion por nuero -->
+                                    <option value="57">Transformadores</option>
+                                    <option value="44">Mini Drones</option>
+                                    <option value="11">Parlante Portatil</option>
+                                    <option value="97">Home theater</option>
+    
+                                </optgroup>
+                            </select>
+    
+                            <!-- Stock -->
+    
+                            <div>
+    
+                                <label for="stock" class="stock">Stock Disponible:</label>
+    
+                            </div>
+    
+                            <div>
+                                <select name="stock" id="stock" required class="selec">
+                                    <!-- Creando el selector de opciones -->
+    
+                                    <option value="36">-Cantidad-</option>
+                                    <!-- Para poner dentro de option cual ejegir ,con un value vacio par que no envie nada en esa opcion-->
+    
+    
+                                    <optgroup label="(Disponibilidad maxima de 5 unidades)">
+                                        <!-- Agrupando por Nacionalidad en caso de que sea ecesario -->
+    
+                                        <option value="1">1:Unidad</option>
+                                        <!-- Opciones dentro del Selec con un value para cuando lo manda ,identificacion por nuero -->
+                                        <option value="2">2:Unidad</option>
+                                        <option value="3">3:Unidad</option>
+                                        <option value="4">4:Unidad</option>
+                                        <option value="5">5:Unidad</option>
+    
+                                    </optgroup>
+                                </select>
+                            </div>
+    
+    
+    
+                        </div>
+                        <!-- Foto -->
+                        <div class="image">
+    
+                            <label for="nombre" class="photo">Foto del producto:</label>
+                        </div>
+    
+                        <input type="file" name="imagen" id="imagen" class="image__input">
+                        <!-- detalle -->
+                        <div>
+                            <label for="textarea" class="detail">Detalle:</label>
+                        </div>
+                        <textarea name="textarea" id="textarea" class="area-de-texto"></textarea>
+    
+                        <!-- Boton envio sin cargo -->
+                        <input type="submit" value="Envio sin cargo" class="button__submit">
+                     </div>   
+                 </fieldset>
+                
+            </form>
+        
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Desarrollado por Felipe Guzzanti</p>
+        <p>Para mayor informacion comunicarse al mail del desarrollador prof.guzzanti@outlook.com</p>
+    </footer>
 </body>
 </html>

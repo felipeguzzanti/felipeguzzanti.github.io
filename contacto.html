@@ -5,9 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+   
+    <!-- <link rel="stylesheet" href="css/contacto.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+   
 </head>
 <body>
-    <h1>Contacto</h1>
+    
+    <header class="main-header">
+        <!-- Agregamos un input para establecer el efecto de aparecer y desaparecer la barra de nav-var cuando lo achicamos -->
+       
+        <input  type="checkbox"  id="menu" >
+        
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+
+            <div class="search-bar__logo-container"></div>
+            <form class="search-bar__form-container">
+                    <label class="search-bar__form-label" for="busqueda"></label>
+                    <input class="search-bar__form-search" id="busqueda" type="search" placeholder="Buscar Aquí...">
+                    <input class="search-bar__form-submit" type="submit" value="Buscar">
+            </form>
+            <div class="search-bar__carrito-container ">
+        
+            </div>
+            <div class="menu-toggle">
+                    <label class="menu-toggle__label " for="menu"> <!--colocar un for menu para que funcione el boton -->
+                        <span class="menu-toggle__top-bread"></span>
+                        <span class="menu-toggle__meat"></span>
+                        <span class="menu-toggle__bottom-bread"></span>
+                    </label>
+            </div>
+        </div>
+       
+        </div>
+    
+    
+    </header>
+    
+    <main >
+        <div class="section-cards__header">
+            
+            <h2 >Las mejores marcas las encontras en ECOMMERCE - CONNECTICUS</h2>   
+            <div class="content__image">
+                
+                <div class="content__image--message">
+                    
+                    <p> <span>Mendoza </span>, Godoy Cruz</p>
+                    
+                    <a class="boton" href="contacto.html">Contactar</a>
+                </div>
+            </div>
+         </div>
+    <div class="content content__shadow">
+        <div id="contacto" class="contact">
+            
+            <form class="form" action="#" method="POST">
+                <legend>Contactános llenando todos los campos</legend>
+
+                <div class="content__camps">
+                    <div class="camp">
+                        <label>Nombre:</label>
+
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="camp">
+                        <label>Teléfono:</label>
+
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+                    
+                    <div class="camp w-100">
+                        <label>Mensaje:</label>
+
+                        <textarea></textarea>
+                    </div>
+                </div><!--.contenedor-campos-->
+                <div class="send">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    <!-- </div>  -->
+    </main>
+    <footer class="footer">
+        <p>&copy; Desarrollado por Felipe Guzzanti</p>
+        <p>Para mayor informacion comunicarse al mail del desarrollador prof.guzzanti@outlook.com</p>
+    </footer>
 </body>
 </html>
