@@ -148,13 +148,8 @@ body {
             NAV BAR
 ***********************************/
 .nav-bar {
-  display: block;
-  width: 100%;
-  height: 40px;
   background-color: #333333;
   color: white;
-  font-family: sans-serif, Helvetica, Arial;
-  box-shadow: 0px 0px 2px gray;
 }
 .nav-bar__nav-list {
   display: flex;
@@ -441,16 +436,22 @@ h2 {
   height: 37.5em;
 }
 
+@media (min-width: 768px) {
+  .fieldset__Uno {
+    width: 45em;
+    margin-left: 0.563em;
+  }
+}
 .fieldset__Uno {
-  width: 62.5em;
+  width: 55em;
   border: 0.063em solid #0a0c0e;
   border-radius: 0.313em;
   margin-top: 0.625em;
   margin-bottom: 10px;
-  margin-left: 11.563em;
+  margin-left: 15em;
   box-shadow: 0 0 1.25em #757a77;
   background-image: url(/img/fondos/fondo5.jpg);
-  background-position-x: 1.25em;
+  background-position-x: -14.75em;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -563,13 +564,22 @@ img {
   margin-top: 1em;
   text-align: center;
   font-size: 1.375em;
-  border-radius: 10px;
-  margin-left: 15em;
+  border-radius: 0.625em;
   color: var(--gris);
   height: 2.5em;
   line-height: 2.1em;
   width: 55%;
   box-shadow: inset 5px -16px 45px -7px #ed5e17;
+}
+@media (min-width: 320px) {
+  .us_h1 {
+    margin-left: 6em;
+  }
+}
+@media (min-width: 768px) {
+  .us_h1 {
+    margin-left: 12em;
+  }
 }
 
 .tobuy__title {
@@ -673,6 +683,7 @@ img {
 }
 
 .form {
+  min-width: 654px;
   margin-top: 3em;
   height: 620px;
   background-color: var(--gris);
@@ -695,7 +706,14 @@ img {
 @media (min-width: 768px) {
   .form {
     margin-top: 20px;
-    max-width: 680px;
+    max-width: 354px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 425px) {
+  .form {
+    margin-top: 20px;
+    max-width: 554px;
     margin: 0 auto;
   }
 }

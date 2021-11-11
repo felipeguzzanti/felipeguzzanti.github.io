@@ -27,6 +27,7 @@
 
 
 .form{
+    min-width: 654px;
     margin-top: 3em;
     height: 620px;
     background-color: var(--gris);
@@ -48,7 +49,14 @@
 @media (min-width:768px) {
     .form {
         margin-top: 20px;
-        max-width: 680px;
+        max-width: 354px;
+        margin: 0 auto;
+    }
+}
+@media (min-width:425px) {
+    .form {
+        margin-top: 20px;
+        max-width: 554px;
         margin: 0 auto;
     }
 }

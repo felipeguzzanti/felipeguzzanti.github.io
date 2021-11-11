@@ -34,23 +34,29 @@
         height: 37.5em;
       
 }
+@media (min-width:768px){
+    .fieldset__Uno{
+        width: 45em;
+        margin-left: 0.563em;
+    }
+}
+.fieldset__Uno{
 
-.fieldset__Uno
-{
-
-    width: 62.5em;
+    width: 55em;
     border: 0.063em solid #0a0c0e;
     border-radius: 0.313em;
     margin-top: 0.625em;
     margin-bottom: 10px;
-    margin-left: 11.563em;
-    box-shadow: 0 0 1.25em rgb(117, 122, 119);
-    background-image: url(/img/fondos/fondo5.jpg);  
-    background-position-x: 1.25em;
+    margin-left: 15em;
+    box-shadow: 0 0 1.25em #757a77;
+    background-image: url(/img/fondos/fondo5.jpg);
+    background-position-x: -14.75em;
     background-repeat: no-repeat;
     background-size: cover;
-       
+
 }
+
+
 
 /* Estilos a las legend */
 

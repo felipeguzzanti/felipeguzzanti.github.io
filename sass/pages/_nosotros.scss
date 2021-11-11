@@ -19,8 +19,7 @@ img {
     margin-top: 1em;
     text-align: center;
     font-size: 1.375em;
-     border-radius: 10px;
-    margin-left: 15em;
+     border-radius: 0.625em;
     color:var(--gris);
     height: 2.5em;
     line-height: 2.1em;
@@ -29,6 +28,18 @@ img {
     -moz-box-shadow: inset 5px -16px 45px -7px rgba(237,94,23,1);
     box-shadow: inset 5px -16px 45px -7px rgba(237,94,23,1);
    
+
+@media (min-width:320px) {
+    &{
+        
+        margin-left: 6em;
+    }
+}
+@media(min-width:768px){
+    &{
+        margin-left: 12em;
+    }
+}
 }
 .tobuy__title {
     text-align: center;
@@ -108,4 +119,5 @@ img {
 .blok__title {
     margin-bottom: 0.625em;
 }
+
 
