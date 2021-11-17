@@ -10,7 +10,7 @@
 
 body {
   box-sizing: border-box;
-  background-image: url(/img/fondos/pxgray.png);
+  background-image: url(../img/fondos/pxgray.png);
 }
 
 body {
@@ -34,7 +34,7 @@ body {
   /* contenedor de la Imagen */
 }
 .card:hover, .card:focus {
-  background-image: url(/img/fondos/paven.png);
+  background-image: url(../img/fondos/paven.png);
   -moz-transform: scale(1.05);
   -webkit-animation-play-statesform: scale(1.05);
   transform: scale(1.05);
@@ -201,7 +201,7 @@ body {
 }
 .search-bar__logo-container {
   margin-bottom: 10px;
-  background-image: url(/img/logo/log1.png);
+  background-image: url(../img/logo/log1.png);
   background-repeat: no-repeat;
   background-position-x: center;
   width: 22%;
@@ -249,7 +249,7 @@ body {
   background: linear-gradient(to bottom, #e0713e 0%, #e27b4b 100%);
 }
 .search-bar__carrito-container {
-  background-image: url(/img/logo/ecomerce_icon.png);
+  background-image: url(../img/logo/ecomerce_icon.png);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -318,7 +318,7 @@ h1 {
 .section-cards {
   padding: 2em;
   border-radius: 0.5em;
-  background-image: url(/img/fondos/paven.png);
+  background-image: url(../img/fondos/paven.png);
   padding-bottom: 2em;
 }
 
@@ -330,7 +330,7 @@ h1 {
 .content__image {
   width: 100%;
   height: 450px;
-  background-image: url(/img/fondos/fondo6.jpg);
+  background-image: url(../img/fondos/fondo6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -421,13 +421,13 @@ h2 {
 }
 
 .main-header {
-  background-image: url(/img/fondos/pxgray.png);
+  background-image: url(img/fondos/pxgray.png);
 }
 
 /*ESTILOS AL FORMULARIO  */
 .content__form {
   width: 85em;
-  background-image: url(/img/fondos/pattern.png);
+  background-image: url(img/fondos/pattern.png);
   margin-right: 2px;
 }
 
@@ -450,7 +450,7 @@ h2 {
   margin-bottom: 10px;
   margin-left: 15em;
   box-shadow: 0 0 1.25em #757a77;
-  background-image: url(/img/fondos/fondo5.jpg);
+  background-image: url(../img/fondos/fondo5.jpg);
   background-position-x: -14.75em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -599,7 +599,7 @@ img {
   grid-template-rows: repeat(1, 2fr);
   color: var(--primarioOscuro);
   font-weight: bold;
-  background-image: url(/img/fondos/paven.png);
+  background-image: url(../img/fondos/paven.png);
   box-shadow: 10px 11px 9px 1px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: 10px 11px 9px 1px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 10px 11px 9px 1px rgba(0, 0, 0, 0.54);
@@ -677,7 +677,7 @@ img {
   margin-top: 30px;
   margin-bottom: 10px;
   /* background-color: rgba(255, 255, 255, 1); */
-  background-image: url(/img/fondos/pattern.png);
+  background-image: url(../img/fondos/pattern.png);
   border-radius: 8px;
   box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
